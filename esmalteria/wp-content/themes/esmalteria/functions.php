@@ -40,6 +40,7 @@
 
 
         add_theme_support( 'custom-logo',$defaults);
+        add_theme_support('title_tag');
     }
 
     add_action('after_setup_theme','modelo_config',0);

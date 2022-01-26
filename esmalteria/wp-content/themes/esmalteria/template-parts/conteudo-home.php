@@ -83,7 +83,18 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <div class="display-3 text-uppercase">
-                        <p>relaxe e aproveite o nosso <span class="fw-bolder">serviço private bar</span></p>
+                        <?php 
+                            $argsBar = array('category_name' => 'bar');
+                            $bar = new wp_query('$argsBar');
+                            if($bar->have_posts()){
+                                while($bar->have_posts()){
+                                    $bar->the_post(); ?>
+                                    <p><?php echo the_title() ?></p>                                    
+                        <?php   }
+                                wp_reset_postdata();
+                            }
+                        ?>
+                        
                     </div>
                     <div class="col-12 col-sm-8 col-md-6 imagem-bar mt-4"></div>
                 </div>
@@ -98,40 +109,85 @@
         </div>
     </div>
 </div>
-<div class="container-fluid parallax">
-</div>
+<?php 
+    $argParallax = array('category_name' => 'parallax');
+    $parallax = new wp_query($argParallax);
+    if($parallax->have_posts()){
+        while($parallax->have_posts()){
+            $parallax->the_post(); ?>
+            <div class="container-fluid parallax" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+    <?php    }
+        wp_reset_postdata();
+    }
+?>
+
 <div class="container-fluid parallax-frente"></div>
 <div class="container-fluid">
     <div class="row text-center justify-content-center bg-info p-4 text-light">
         <div class="col-lg-6">
-            <h2 class="display-1">a gente quer te ver <span class="fw-bolder">empoderada!</span></h2>
+            <h2 class="display-1"><?php echo category_description(6); ?></h2>
         </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row py-3 align-items-center" id="foto-texto">
-        <div class="col-12 col-sm-12 col-lg-6" id="foto-texto1"></div>
-        <div class="col-12 col-lg-6" id="texto-foto1">
-            <h2 class="display-4 text-uppercase fw-bold text-info">valorize o seu momento</h2>
-            <p class="fs-4 text-info">Para um momento completo os cabelos não podem faltar. Permita-se e cuide-se por inteira aqui na Esmalteria Padrão</p>
-            <button class=" btn btn-info text-light">Agendar horário</button>
-        </div>
-        <div class="col-12 col-lg-6" id="texto-foto2">
-            <h2 class="display-4 text-uppercase fw-bold text-info">marque presença</h2>
-            <p class="fs-4 text-info">A sua presença é notada também pelo seu olhar, por isso a importância em estar com os olhos bonitos, brilhantes e estonteantes. Consulte nossos serviços para os olhos e cílios.</p>
-            <button class="btn btn-info text-light"> Agenda horário</button>
-        </div>
-        <div class="col-12 col-sm-12 col-lg-6" id="foto-texto2"></div>
+        <?php
+            $argMomentos = array(
+                'category_name' => 'momento',
+                'orderby' => 'ID',
+                'order' => 'ASC'
+            );
+            $momentos = new wp_query($argMomentos);
+            if($momentos->have_posts()){
+                while($momentos->have_posts()){
+                    $momentos->the_post();
+                    $id = get_the_ID();
+                    if ($id == 98){ ?>
+                        <div class="col-12 col-sm-12 col-lg-6" id="foto-texto1" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+                        <div class="col-12 col-lg-6" id="texto-foto1">
+                            <h2 class="display-4 text-uppercase fw-bold text-info"><?php echo the_title(); ?></h2>
+                            <?php the_content(); ?>
+                            <button class=" btn btn-info text-light">Agendar horário</button>
+                        </div>
+              <?php }
+                    elseif($id == 100){ ?>
+                        <div class="col-12 col-lg-6" id="texto-foto2">
+                            <h2 class="display-4 text-uppercase fw-bold text-info"><?php echo the_title(); ?></h2>
+                            <?php the_content(); ?>
+                            <button class="btn btn-info text-light"> Agenda horário</button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6" id="foto-texto2" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+            <?php   }
+
+                }
+                wp_reset_postdata();
+            }
+        ?>
+
+
+
     </div>
 </div>
 <div class="container-fluid">
     <div class="row align-items-center" id="franquias">
-        <div class="col-12 col-lg-6 col-xl-4 mx-auto text-center mt-4">
-            <p class="text-uppercase text-light mx-auto">SEJA DONA DO SEU PRÓPRIO NEGÓCIO E TENHA UMA ESMALTERIA padrão PARA CHAMAR DE SUA</p>
-            <h2 class="display-1 text-uppercase text-light mx-auto mb-3">A GENTE QUER TE VER <strong>REALIZADA!</strong></h2>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-7 pt-xl-4 mx-auto">
-            <div id="foto-franquia"></div>
+            <?php 
+                $args1 = array('category_name' => 'franquia');
+                $franquia = new wp_query($args1);
+                if ($franquia->have_posts()){
+                    while($franquia->have_posts()){
+                        $franquia->the_post();?>
+                        <div class="col-12 col-lg-6 col-xl-4 mx-auto text-center mt-4">
+                            <p class="text-uppercase text-light mx-auto"><?php echo the_title() ?></p>
+                            <h2 class="display-1 text-uppercase text-light mx-auto mb-3"><?php echo category_description(5);?></h2>                                                    
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-7 pt-xl-4 mx-auto">
+
+                            <div id="foto-franquia" style="background-image: url('<?php the_post_thumbnail_url()?>');"></div>
+                    <?php }
+                    wp_reset_postdata(); 
+                }
+                ?>
+
         </div>
         <button class="col-6 col-sm-8 col-md-4 col-lg-3 col-xl-2 btn btn-info text-light my-4 mx-auto">Franquias Esmalteria Padrão</button>
     </div>

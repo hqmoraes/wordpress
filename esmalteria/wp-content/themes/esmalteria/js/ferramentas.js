@@ -46,3 +46,6 @@ jQuery('.slider').slick({
         // instead of a settings object
       ]
   });
+
+  jQuery('#texto-foto1 p').addClass('text-info fs-3');
+  jQuery('#texto-foto2 p').addClass('text-info fs-3');

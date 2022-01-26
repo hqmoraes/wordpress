@@ -1,6 +1,6 @@
     <div class="slider p-0">
         <?php 
-            $args = array('catergory_name' => 'unidades');
+            $args = array('category_name' => 'unidades');
             $tipos = new wp_query($args);
             $cont = 0;
                 if($tipos->have_posts()){

@@ -129,7 +129,6 @@ main{
 
 .parallax{
     height: 100vh;
-    background: url('http://hmdev.hospedar.net/esmalteria/wp-content/uploads/2022/01/ali-pazani-3w14X-Yxffk-unsplash-scaled.jpg');
     background-repeat:no-repeat;
     background-size: cover;
     position: fixed;
@@ -309,7 +308,6 @@ main{
     }
 
     #foto-franquia{
-        background: url('http://hmdev.hospedar.net/esmalteria/wp-content/uploads/2022/01/jenny-ueberberg-PwAr8XR3nqY-unsplash-scaled.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left top;
@@ -377,7 +375,7 @@ main{
     height: 80vh;
 }
 
-.bg-video div{
+.bg-video div:nth-of-type(1){
     height: 40%;
 }
 

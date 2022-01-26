@@ -1,0 +1,9 @@
+### BEGIN BASIC BLOCK
+#<Files wp-login.php>
+AuthType Basic
+AuthName "Área restrita"
+AuthUserFile ../htdocs/portfolio/wordpress/esmalteria/.htpasswd
+Require user admin
+Satisfy All
+#</Files>
+### END BASIC BLOCK
