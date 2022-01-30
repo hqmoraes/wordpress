@@ -16,7 +16,7 @@
                 <?php endif; ?>
         </div>
     </div>
-    <div id="texto-slide-home">
+    <div id="texto-slide-home" class="d-block">
         <p>Uma esmalteria moderna e cheia de charme!</p>
         <p>Sempre aberta</p>
         <button class="btn btn-info">Saiba mais</button>

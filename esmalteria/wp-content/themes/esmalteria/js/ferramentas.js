@@ -49,3 +49,22 @@ jQuery('.slider').slick({
 
   jQuery('#texto-foto1 p').addClass('text-info fs-3');
   jQuery('#texto-foto2 p').addClass('text-info fs-3');
+
+
+  if(document.querySelector('#texto-slide-home.texto-publico p')){
+    var quebrar = document.querySelector('#texto-slide-home.texto-publico p').innerText.split(' ');
+    var juntar = '';
+    var contar = 0;
+    quebrar.forEach(element => {
+      if (contar === 2){
+        juntar = juntar + "<br>" + element;
+        contar++;
+      }
+      else{
+        juntar = juntar + " " + element;
+        contar++;
+      }
+    });
+    document.querySelector('#texto-slide-home.texto-publico p').innerHTML = juntar;
+  }
+  

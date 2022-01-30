@@ -16,6 +16,26 @@ main{
 
 }
 
+.caixasDestaque{
+    background: white;
+    box-shadow: 1px 1px 10px grey;
+    height: 300px;
+    color: pink;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.caixasDestaque i{
+    font-size: 50px;
+}
+
+.hoverDestaques:hover{
+    border: 2px solid goldenrod;
+    box-shadow: 2px 2px 20px black;
+}
+
+
 .mobile{
     margin-top: -250px !important;
 }
@@ -33,7 +53,7 @@ main{
     position: absolute;
     bottom: 25%;
     left:5%;
-    height: 345px;
+    height: fit-content;
     width: 350px;
     background: rgba(0,255,255,0.4);
     padding: 10px 20px;
@@ -105,7 +125,7 @@ main{
 }
 
 .cartoes p{
-    height: 100px;
+    height: 60px;
 }
 
 .cartoes{
@@ -118,7 +138,6 @@ main{
 }
 
 .imagem-bar{
-    background-image: url('http://hmdev.hospedar.net/esmalteria/wp-content/uploads/2022/01/candice-picard-jWLSwgJGv3g-unsplash-scaled.jpg');
     background-size: cover;
     border-radius: 50px;
     width: 30vw;
@@ -209,6 +228,12 @@ main{
 
 @media (max-width: 575px) {
 
+    .height{
+        height: 30vh !important;
+        width: fit-content;
+    }
+
+
     #franquias{
         height: auto;
         background: pink;
@@ -280,13 +305,16 @@ main{
 
 .bg-video{
     background: white;
-    height: 80vh;
+    height: 100vh;
 }
 
 .bg-video div{
     height: 40%;
 }
 
+.texto-video h1{
+    font-size: 1.5rem;
+}
 
 .texto-video{
     font-family: 'Raleway', sans-serif;
@@ -294,12 +322,49 @@ main{
 }
 
 .texto-video p{
-    font-size: 1rem !important;
+    font-size: 1rem;
 } 
+
+#cuidados{
+    background-image: linear-gradient(white 10% 20%, #abb8c3 20% 100%);
+}
+
+    #fotoCuidado{
+     background-size: cover;   
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 60vh;
+     margin: 0 auto;
+     width: 50vw;
+     box-shadow: 1px 1px 10px gray;
+    }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+
+#cuidados{
+    background-image: linear-gradient(white 10% 20%, #abb8c3 20% 100%);
+}
+
+    #fotoCuidado{
+     background-size: cover;   
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 60vh;
+     margin: 0 auto;
+     width: 50vw;
+     box-shadow: 1px 1px 10px gray;
+    }
+
+
+    .height{
+        height: 30vh !important;
+        width: fit-content;
+    }
+
 
     #franquias{
         height: 100%;
@@ -358,7 +423,7 @@ main{
         height: 70px;
     }
     
-    .cartoes p{
+    .cartoes p:nth-of-type(2){
         height: 170px;
     }    
     
@@ -386,12 +451,51 @@ main{
 }
 
 .texto-video p{
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
- }
+
+.texto-publico{
+    font-size: 4rem !important;
+    width: fit-content !important;
+    left: 0 !important;
+}
+
+.texto-publico button{
+    display: none;
+}
+
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    #cuidados{
+        background-image: linear-gradient(white 10% 20%, #abb8c3 20% 80%, white 80% 100%);
+    }
+
+    #fotoCuidado{
+        background-size: cover;   
+        background-repeat: no-repeat;
+        background-position: right top;
+        height: 75vh;
+        margin: -100vw auto;
+        box-shadow: 1px 1px 10px black;
+        animation-name: fotoCuidado;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        width: 41.66666667%;
+    }
+
+    @keyframes fotoCuidado {
+        0%{margin-left: -100vw}
+        100%{margin-left: 0}
+    }
+
+
+    .height{
+        height: 60vh !important;
+        width: fit-content;
+    }
 
  }
 
