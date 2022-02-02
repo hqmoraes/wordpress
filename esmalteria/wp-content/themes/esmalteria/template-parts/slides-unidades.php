@@ -48,8 +48,8 @@
                     <?php $arg = array ('cat' => $Cat); $query = new WP_Query( $arg );
                     $count = $query->found_posts; ?>                    
                     <div  data-qtd="<?php echo $count; ?>" class="container-fluid slds" id="<?php echo get_the_category(get_the_ID())[0]->category_nicename; ?>">
-                <div class="row slidesUnidades align-items-center py-4">                    
-                    <div class="col-6">
+                <div class="row slidesUnidades align-items-center">                    
+                    <div class="col-12 col-md-8 col-lg-6">
                         <div class="container">
                             <div class="row">
             
@@ -111,7 +111,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 mt-4 col-md-4 col-lg-6 mt-md-0">
                         <div>
                             <div class="display-6 fs-4"><?php imprimirConteudoPagina()?></div>
                             <div class="display-5"><?php imprimirTituloPagina()?></div>

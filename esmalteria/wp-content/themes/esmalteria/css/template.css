@@ -48,7 +48,8 @@ main{
 }
 
 .slidesUnidades{
-    height: 100vh;
+    min-height: 70vh;
+    padding: 4rem 0;
 }
 
 .slidesUnidades .col-6{
@@ -73,7 +74,7 @@ background-color: #64c4bc;
 }
 
 .slideunidade{
-    height: 60vh;
+    min-height: 60vh;
     background: rgba(0, 0 ,0, .4);
     display:flex;
     align-items: center;
@@ -667,4 +668,9 @@ background-color: #64c4bc;
         height: 80vh;
     } 
 
+ }
+
+ .slide-parceria div{
+     height: 100vh;
+     background-size: cover;
  }

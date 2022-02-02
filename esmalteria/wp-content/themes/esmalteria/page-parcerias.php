@@ -1,0 +1,4 @@
+<?php /* Template Name: Unidades */ ?>
+<?php get_header(); ?>
+<?php get_template_part('template-parts/conteudo','parcerias') ?>
+<?php get_footer();?>

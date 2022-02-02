@@ -130,14 +130,27 @@ jQuery('.slider').slick({
           asNavFor: IDnav,
           autoplay: true
         });
-        jQuery(IDnav).slick({
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          asNavFor: ID,
-          dots: true,
-          centerMode: true,
-          focusOnSelect: true
-        }); 
+        if (screen.width >= 992){
+          jQuery(IDnav).slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: ID,
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+          });
+        }
+        else{
+          jQuery(IDnav).slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            asNavFor: ID,
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+          });
+        }
+ 
       }
       nav = i.id + " .slick-track";
       nv = i.id + " .slide-nav";
@@ -145,7 +158,14 @@ jQuery('.slider').slick({
       if (i.dataset.qtd == 1){
         document.querySelector("#" + nv).style.display = "none";
       }
-
-
-
     })
+
+    jQuery('#slides-parceria').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      arrows: false,
+      autoplay: true
+    });

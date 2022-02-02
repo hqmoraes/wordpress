@@ -25,9 +25,9 @@ $catID = array();
                 $catID[] = $item;
             }
             if ($cnt <= 2){ 
-            ?> <div class="col-4 p-4"> <?php $cnt++;
+            ?> <div class="col-12 col-md-4 p-4"> <?php $cnt++;
             }else{ ?>
-                <div class="col-3 p-4"> <?php
+                <div class="col-12 col-sm-4 col-lg-3 p-4"> <?php
             } ?>
             <div class="mx-auto" id="bkg-unidades" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
                 <div class="p-3 text-center">
