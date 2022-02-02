@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://hmdev.hospedar.net/wordpress/esmalteria",
+            "url": "http://esmalteria.hospedar.net",
             "webRoot": "${workspaceFolder}"
         }
     ]

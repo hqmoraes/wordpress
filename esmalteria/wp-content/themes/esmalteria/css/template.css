@@ -16,6 +16,85 @@ main{
 
 }
 
+#bannerUnidades{
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bkg-unidades{
+    height: 200px;
+    background-size: cover;
+    width: 200px;
+    box-shadow: 1px 1px 10px black;
+    transition: transform 0.5s;    
+}
+
+#bkg-unidades:hover{
+    transform: scale(1.2);
+}
+
+
+#bkg-unidades .p-3{
+    background: rgba(0, 0 ,0, .4);
+    width: 100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.slidesUnidades{
+    height: 100vh;
+}
+
+.slidesUnidades .col-6{
+    display: flex;
+    align-items: center;
+}
+
+.sl1{
+background-color: #64c4bc;
+}
+
+.sl2{
+    background-color: #9186AF;
+}
+
+.sl3{
+    background-color: #F29DAC;
+}
+
+.sl1, .sl2, .sl3 {
+    color: white;
+}
+
+.slideunidade{
+    height: 60vh;
+    background: rgba(0, 0 ,0, .4);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideunidade-nav{
+    height: 13vh;
+    background: rgba(0, 0 ,0, .4); 
+    display:flex;
+    align-items: center;
+    justify-content: center;   
+    scale:(0.7);
+}
+
+.sld{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .caixasDestaque{
     background: white;
     box-shadow: 1px 1px 10px grey;

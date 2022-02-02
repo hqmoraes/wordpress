@@ -68,3 +68,84 @@ jQuery('.slider').slick({
     document.querySelector('#texto-slide-home.texto-publico p').innerHTML = juntar;
   }
   
+  slidesUnidades = document.querySelectorAll(".slidesUnidades");
+  sl1 = [0,6];
+  sl2 = [2,8];
+  sl3 = [4,10];
+
+    for (i = 0; i < slidesUnidades.length; i++){
+      if (sl1.includes(i)) slidesUnidades[i].classList.add('sl1');
+      else if (sl2.includes(i)) slidesUnidades[i].classList.add('sl2');
+      else if (sl3.includes(i)) slidesUnidades[i].classList.add('sl3');
+      else {
+        slidesUnidades[i].style.background = "white";
+        slidesUnidades[i].children[0].style.color = "white";
+      }
+    }
+
+   
+    
+    slds = document.querySelectorAll(".slds");
+    slds.forEach(i =>{
+      ID = '#' + i.id + ' .slidesUnidade';
+      IDnav = '#' + i.id + ' .slide-nav';      
+      if(i.dataset.qtd == 2){
+        jQuery(ID).slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: IDnav
+        });
+        jQuery(IDnav).slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: ID,
+          dots: true,
+          centerMode: false,
+          focusOnSelect: true,
+        }); 
+        var c = 0;
+        document.querySelectorAll("#"+i.id + " .slide-unidade-nav .slideunidade-nav").forEach(e =>{
+          e.style.height = "30vh";
+          e.parentElement.classList.remove("mx-2");
+          e.parentElement.classList.remove("mx-2");
+          if (c == 0) {
+            e.parentElement.classList.add("me-2");
+            c++;
+          }
+           else {
+             e.parentElement.classList.add("ms-2");
+             c++;
+            }
+        })
+      }
+      else{
+        jQuery(ID).slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: IDnav,
+          autoplay: true
+        });
+        jQuery(IDnav).slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: ID,
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+        }); 
+      }
+      nav = i.id + " .slick-track";
+      nv = i.id + " .slide-nav";
+      navs = document.querySelector("#" + nav);
+      if (i.dataset.qtd == 1){
+        document.querySelector("#" + nv).style.display = "none";
+      }
+
+
+
+    })
