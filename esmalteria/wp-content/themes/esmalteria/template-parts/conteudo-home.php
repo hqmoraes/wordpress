@@ -179,7 +179,7 @@
                         $franquia->the_post();?>
                         <div class="col-12 col-lg-6 col-xl-4 mx-auto text-center mt-4">
                             <p class="text-uppercase text-light mx-auto"><?php echo the_title() ?></p>
-                            <h2 class="display-1 text-uppercase text-light mx-auto mb-3"><?php echo category_description(5);?></h2>                                                    
+                            <h2 class="display-2 text-uppercase text-light mx-auto mb-3"><?php echo category_description(5);?></h2>                                                    
                         </div>
                         <div class="col-12 col-lg-6 col-xl-7 pt-xl-4 mx-auto">
 

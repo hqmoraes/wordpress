@@ -161,7 +161,6 @@ jQuery('.slider').slick({
     })
 
     jQuery('#slides-parceria').slick({
-      dots: true,
       infinite: true,
       speed: 500,
       fade: true,
@@ -169,3 +168,6 @@ jQuery('.slider').slick({
       arrows: false,
       autoplay: true
     });
+
+    document.querySelector('.oq div h4').classList.add('display-6');
+var modelosNegocios = document.querySelector('#modelosNegocios').split(' ');
