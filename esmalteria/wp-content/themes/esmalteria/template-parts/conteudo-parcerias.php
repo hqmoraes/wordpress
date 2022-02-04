@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="bannerParceria">
     <div class="row">
         <div class="col-12 p-0  position-relative">
             <div id="slides-parceria">
@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="o-que-e">
     <div class="row">
         <?php 
             $argsOq = array('category_name'=>'o-que-e');
@@ -52,7 +52,7 @@
         ?>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="diferenciais">
     <div class="row">
         <?php 
             $argsDif = array('category_name'=>'diferenciais');
@@ -111,31 +111,30 @@
     </div>
 </div>
 <?php get_template_part('template-parts/parte','caixas'); ?>
-<div class="container-fluid">
+<div class="container-fluid" id="nailBar">
     <div class="row">
             <?php
                 $argsNailBar = array('category_name'=>'bar');
                 $nailBar = new wp_query($argsNailBar);
                 if($nailBar->have_posts()){
                     while($nailBar->have_posts()){
-                        $nailBar->the_post(); ?>
+                        $nailBar->the_post();?>
                         <div class="col-12" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
                             <div class="p-4 row justify-content-center" style=" height: 100%; background: rgba(0,0,0,0.4)">
-                                <div class="col-8 text-light">
+                                <div class="col-12 col-md-8 text-light">
                                     <?php the_excerpt(); ?>
                                 </div>
-                                <div class="col-6">
-                                <button class="btn btn-info text-light">Quero ser um(a) franqueado(a)</button>
+                                <div class=" col-12 col-md-8">
+                                    <button class="btn btn-info text-light">Quero ser um(a) franqueado(a)</button>
                                 </div>
-                                <div class="col-2"></div>
                             </div>
-                    </div>                        
+                        </div>                        
                     <?php }
                 }
             ?>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="banner2">
     <div class="row">
         <?php 
             $argsDif = array('p'=>'326');
@@ -144,7 +143,7 @@
                 while($diferenciaisp->have_posts()){
                     $diferenciaisp->the_post();?>
                     <div class="p-0 col-12" style=" background-size: cover; background-image: url(<?php the_post_thumbnail_url(); ?>)">
-                        <div class="d-flex align-items-center" style="height: 100vh;background: linear-gradient(135deg, rgba(255,0,236,0.8),rgba(0,0,236,0.52))">
+                        <div class="d-flex align-items-center" style="min-height: 100vh;background: linear-gradient(135deg, rgba(255,0,236,0.8),rgba(0,0,236,0.52))">
                             <div class="container">
                                 <div class="row align-items-center">
                                     <?php
@@ -178,10 +177,10 @@
         ?>
     </div>
 </div>
-<div class="container">
+<div class="container my-4">
     <div class="row align-items-center">
-        <div class="col-10">
-            <div class="container" id="modelosNegocios">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 col-md-10" id="modelosNegocios">
                 <?php 
                     $contaModelos = 0;
                     $argsModelosNegocios = array('category_name'=>'modelos-de-negocio');
@@ -191,26 +190,100 @@
                             $modelosNegocios->the_post();
                             if($contaModelos == 0 ) { ?>
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-12 col-md-10 text-center my-4">
                                         <div class="display-5"><?php print_r(get_the_category()[0]->name) ?></div>
                                         <div><h4><?php print_r(get_the_category()[0]->description) ?></h4></div>
                                     </div>
                                 </div>
                             <?php 
-                            $contaModelos++;
-                            }?>
-                            <div class="row">
-                                <div class="col-5">
-                                    <img class="img-fluid" src="<?php the_post_thumbnail_url() ?>" alt="">
+                            }
+                            if($contaModelos % 2 == 0){
+                            ?>
+                                <div class="row modelosNegocios">
+                                    <div class="col-12 col-md-6 pe-md-0">
+                                        <div class="imgModelosNegocios" style="min-height: 100vh; background-image: url(<?php the_post_thumbnail_url() ?>)" alt=""></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center">
+                                        <div class="p-3">
+                                            <div class="h2 fs-4"><?php the_title() ?></div>
+                                            <div class="fs-6"><?php the_content(); ?></div>
+                                            <div><button class="btn btn-info text-light">Quero ser um(a) franqueado(a)</button></div>
+                                        </div>
+                                    </div>                            
                                 </div>
-                                <div class="col-5">
-                                    <div><?php the_title() ?></div>
-                                    <div><?php the_content(); ?></div>
-                                </div>                            
-                            </div>
-<?php                   }
+<?php                           }else{ ?>
+                                <div class="row modelosNegocios">
+                                    <div class="col-12 col-md-6 order-md-2 ps-md-0">
+                                        <div class="imgModelosNegocios" style="min-height: 100vh; background-image: url(<?php the_post_thumbnail_url() ?>)" alt=""></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 order-md-1 d-flex align-items-center">
+                                        <div class="p-3">
+                                            <div class="h2 fs-4"><?php the_title() ?></div>
+                                            <div class="fs-6"><?php the_content(); ?></div>
+                                            <div><button class="btn btn-info text-light">Quero ser um(a) franqueado(a)</button></div>                                            
+                                        </div>
+                                    </div>                            
+                                </div>
+<?php                           }
+                            $contaModelos++;
+                        }
                     }
                 ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="background: linear-gradient(135deg, rgba(255,0,236,0.8),rgba(0,0,236,0.52))">
+    <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center text-light"  style="height: 30vh">
+            <div class="text-center">
+                <div>
+                    <h2 class="display-6">Seja um(a) Franqueado(a) da <strong>Esmalteria Nacional!</strong></h2>
+                </div>
+                <div class="my-4"><button class="btn btn-outline-light">Quero ser um(a) franqueado(a)</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-12  border border-light p-md-0">
+            <div class="row mb-3 ">
+                <div><h4 class="text-center">FAQ</h4></div>
+                <div class="display-5 text-center">Ficou alguma <strong>dúvida?</strong></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="faq">
+                    <?php 
+                        $argsFaq = array('category_name'=>'faq', 'orderby'=>'id', 'order'=>'asc');
+                        $faq = new wp_query($argsFaq);
+                        if($faq->have_posts()){
+                            while($faq->have_posts()){
+                                $faq->the_post(); ?>
+                                <div class="accordion-item shadow my-4 border border-info">
+                                    <h2 class="accordion-header" id="<?php echo 'haccordion' . get_the_ID() ?>">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="<?php echo '#caccordion' . get_the_ID() ?>" aria-expanded="false" aria-controls="collapseOne">
+                                        <?php the_title();?>
+                                    </button>
+                                    </h2>
+                                    <div id="<?php echo 'caccordion' . get_the_ID() ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo 'caccordion' . get_the_ID() ?>" data-bs-parent="#faq">
+                                        <div class="accordion-body text-left">
+                                            <?php the_content() ?>
+                                        </div>
+                                    </div>
+                                </div>
+<?php                       }
+                        }
+                    ?>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                <button class="text-light btn btn-info my-4">Quer Saber mais</button>
+                </div>
             </div>
         </div>
     </div>
