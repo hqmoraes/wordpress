@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://esmalteria.hospedar.net",
+            "url": "http://imobiliaria.hospedar.net",
             "webRoot": "${workspaceFolder}"
         }
     ]

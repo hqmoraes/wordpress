@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@media (max-width: 400px) {
+  #objetos {
+    min-width: 300px;
+    background: yellow;
+    border-bottom: 5px solid pink;
+  }
+  #objetos header {
+    font-size: 50px;
+  }
+  #objetos footer {
+    font-size: 30px;
+  }
+  #objetos section {
+    background: yellow;
+    height: 60px;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+  }
+  #objetos main {
+    height: 50vh;
+  }
+  #objetos h1 {
+    background: gray;
+  }
+  #objetos h2 {
+    color: gray;
+  }
+  #objetos nav {
+    background: gray;
+  }
+  #objetos aside {
+    background: gray;
+  }
+}
+/* Isso é um comentário que eu nunca sabia colocar!!!*/
+#objetos, #objetos2 {
+  width: fit-content !important;
+  border-bottom: 5px solid pink;
+}
+#objetos header, #objetos2 header {
+  width: fit-content !important;
+  font-size: 50px;
+}
+#objetos footer, #objetos2 footer {
+  width: fit-content !important;
+  font-size: 30px;
+}
+#objetos section, #objetos2 section {
+  width: fit-content !important;
+  background: yellow;
+  height: 60px;
+  font-weight: bolder;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+#objetos main, #objetos2 main {
+  width: fit-content !important;
+  height: 50vh;
+}
+#objetos h1, #objetos2 h1 {
+  background: gray;
+}
+#objetos h2, #objetos2 h2 {
+  color: gray;
+}
+#objetos nav, #objetos2 nav {
+  width: fit-content !important;
+  background: gray;
+}
+#objetos aside, #objetos2 aside {
+  width: fit-content !important;
+  background: gray;
+}
+
+/*# sourceMappingURL=estilo.css.map */

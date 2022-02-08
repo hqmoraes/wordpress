@@ -1,0 +1,51 @@
+/* Isso é um comentário que eu nunca sabia colocar!!!*/
+
+
+@use 'mxw300';
+
+$bg: gray;
+$bg2: yellow;
+$fs1: 30px;
+$largura: fit-content !important;
+
+
+
+#objetos, #objetos2{
+    width: $largura;
+    header{
+        width: $largura;
+        font-size: 50px;
+    }
+    footer{
+        width: $largura;
+        font-size: 30px;
+    }
+    section{
+        width: $largura;
+        background: $bg2;
+        height: 60px;
+        font-weight: bolder;
+        font-size: $fs1;
+        display: flex;
+        align-items: center;
+    }
+    main{
+        width: $largura;
+        height: 50vh;
+    }
+    h1{
+        background: $bg;
+    }
+    h2{
+        color: $bg;
+    }
+    nav{
+        width: $largura;
+        background: $bg;
+    }
+    aside{
+        width: $largura;
+        background: $bg;
+    }
+    border-bottom: 5px solid pink;
+}

@@ -1,0 +1,39 @@
+@media (max-width: 400px) {
+    $bg: gray;
+    $bg2: yellow;
+    $fs1: 30px;    
+    #objetos{
+        min-width: 300px;
+        background: yellow;
+            header{
+                font-size: 50px;
+            }
+            footer{
+                font-size: 30px;
+            }
+            section{
+                background: $bg2;
+                height: 60px;
+                font-weight: bolder;
+                font-size: $fs1;
+                display: flex;
+                align-items: center;
+            }
+            main{
+                height: 50vh;
+            }
+            h1{
+                background: $bg;
+            }
+            h2{
+                color: $bg;
+            }
+            nav{
+                background: $bg;
+            }
+            aside{
+                background: $bg;
+            }
+            border-bottom: 5px solid pink;
+        }        
+    }   
