@@ -1,0 +1,23 @@
+@use 'imgs-cards';
+#busca{
+    *{
+        font-size: 0.7rem !important;
+    }
+    #ctn-busca{
+    border: 1px solid black;
+    }
+    select{
+        font-weight: bold;
+    }
+    input, label{
+        width: 40%;
+        min-width: 50px;
+    }
+    i{
+        width: 50px;
+    }
+} 
+
+body{
+    background: yellow;
+}

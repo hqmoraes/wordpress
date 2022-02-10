@@ -1,0 +1,18 @@
+#busca * {
+  font-size: 0.7rem !important;
+}
+#busca #ctn-busca {
+  border: 1px solid black;
+}
+#busca select {
+  font-weight: bold;
+}
+#busca input, #busca label {
+  width: 40%;
+  min-width: 50px;
+}
+#busca i {
+  width: 50px;
+}
+
+/*# sourceMappingURL=template.css.map */
