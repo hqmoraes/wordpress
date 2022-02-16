@@ -3,25 +3,394 @@
   height: 200px !important;
 }
 
-#busca * {
-  font-size: 0.7rem !important;
-}
-#busca #ctn-busca {
-  border: 1px solid black;
-}
-#busca select {
-  font-weight: bold;
-}
-#busca input, #busca label {
-  width: 40%;
-  min-width: 50px;
-}
-#busca i {
-  width: 50px;
-}
+@media only screen and (min-width: 992px) {
+  #menu-superior {
+    height: 100px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+  }
+  #menu-superior .col-11 img {
+    height: 25px !important;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img, #menu-superior .col-2 img {
+    height: 40px !important;
+    margin-right: 10px;
+  }
+  #menu-superior .custom-logo-link img {
+    width: auto;
+    height: 70px !important;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
 
-body {
-  background: yellow;
+  #contato p {
+    margin: 0 20px;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #menu-superior {
+    height: 80px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+  }
+  #menu-superior .col-11 img {
+    height: 5px !important;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img, #menu-superior .col-2 img {
+    height: 20px !important;
+    margin-right: 10px;
+  }
+  #menu-superior .custom-logo-link img {
+    width: auto;
+    height: 50px !important;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  #contato p {
+    margin: 0 20px;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 1.6912rem !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 1.1912rem;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 1.9216rem !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 1.4216rem;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 2.1904rem !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 1.6904rem;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 2.44rem !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 1.94rem;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 2.68rem !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 2.18rem;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+/* <= 575 */
+@media only screen and (max-width: 575px) {
+  #busca {
+    color: white;
+    max-width: 300px;
+    min-width: 280px;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+}
+/* >= 576 - sm */
+@media only screen and (min-width: 576px) {
+  #busca {
+    color: white;
+    max-width: 400px;
+    min-width: 380px;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+}
+/* >=768 - md */
+@media only screen and (min-width: 768px) {
+  #busca {
+    color: white;
+    max-width: 750px;
+    min-width: 730px;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: 100%;
+  }
+}
+/* >= 992 - lg */
+@media only screen and (min-width: 992px) {
+  #busca {
+    color: white;
+    max-width: 1200px;
+    min-width: 1180px;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 1rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 1rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.7rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 1rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=template.css.map */

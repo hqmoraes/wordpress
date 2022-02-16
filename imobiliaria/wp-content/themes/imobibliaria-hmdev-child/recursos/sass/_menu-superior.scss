@@ -1,0 +1,50 @@
+@mixin menu-superior($altura){
+    #menu-superior{
+        height: $altura;
+        background-color: rgb(124, 115, 115); 
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 10;
+        color: white;
+        font-weight: 100;
+        .col-11 img{
+            height: $altura - 75 !important;
+            margin-right: 5px;
+        }
+        .col-1 img, .col-2 img{
+            height: $altura - 60 !important;
+            margin-right: 10px;
+        }
+        .custom-logo-link img{
+            width: auto;
+            height: $altura - 30 !important;
+        }
+        .custom-logo-link{
+            display: flex;
+            align-items: center;
+            height: $altura;
+        }
+
+    }
+    #contato p{
+        margin: 0 20px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    @include menu-superior(
+        $altura: 100px
+    )
+}
+@media only screen and (max-width: 991px) {
+    @include menu-superior(
+        $altura: 80px
+    )
+}
+
+
+
+
+

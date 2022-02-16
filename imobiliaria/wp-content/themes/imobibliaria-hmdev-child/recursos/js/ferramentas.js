@@ -32,3 +32,7 @@ jQuery('.card-imagens').slick({
     infinite: true,
 
 });
+
+const lancamentos = document.querySelector('#parte1 .wp-block-buttons').cloneNode(true);
+document.getElementById('lancamentos').appendChild(lancamentos);
+document.querySelector('#parte1 .wp-block-buttons').style.display='none';

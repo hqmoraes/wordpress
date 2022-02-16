@@ -1,0 +1,78 @@
+@mixin search-bar($largura, $font-size, $larg-label,$bg-search:rgba(0, 0, 0, 0.7)){
+    #busca{
+        color: white;
+        #ctn-busca{
+            background-color: $bg-search;
+        }
+        select{
+            font-weight: bold;
+            font-size: $font-size - 0.2 !important;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            border: none;
+        }
+        select:focus{
+            box-shadow: none;
+        }
+        option{
+            font-size: $font-size - 0.2 !important;
+            background: $bg-search;
+
+        }
+        h5{
+            font-size: $font-size + .5 !important;
+        }
+        input, label, span{
+            font-size: $font-size - 0.2 !important;
+            font-weight: 600;
+        }
+        max-width: $largura;
+        min-width: $largura - 20;
+        margin: 0 auto;
+        z-index: 5;
+        position: relative;
+    } 
+    #faixa label{
+        width: $larg-label
+    }
+
+}
+
+
+/* <= 575 */
+@media only screen and (max-width: 575px) {
+    @include search-bar(
+        $largura: 300px,
+        $font-size: 1rem,
+        $larg-label: auto,
+    )
+}
+/* >= 576 - sm */
+@media only screen and (min-width: 576px) {
+    @include search-bar(
+        $largura: 400px,
+        $font-size: 1rem,
+        $larg-label: auto,
+    )
+}
+/* >=768 - md */
+@media only screen and (min-width: 768px) {
+    @include search-bar(
+        $largura: 750px,
+        $font-size: 1rem,
+        $larg-label: 100%,
+    )
+}
+/* >= 992 - lg */
+@media only screen and (min-width: 992px) {
+    @include search-bar(
+        $largura: 1200px,
+        $font-size: 1.2rem,
+        $larg-label: auto,
+    )
+}
+
+
+
+
+

@@ -1,4 +1,4 @@
 <?php 
 get_header();
-get_template_part('template-parts/search','bar');
+get_template_part('template-parts/fundo','parte1');
 get_footer();

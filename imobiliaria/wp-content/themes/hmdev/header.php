@@ -7,4 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+<div id="opacidade-parte1"></div>
+    <?php get_template_part('template-parts/menu','superior'); ?>
+
