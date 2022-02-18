@@ -5,7 +5,7 @@
 @import 'banner';
 @import 'destaques';
 @import 'single';
-
+@import 'resultado-busca';
 
 $tela:575;
 $size: 1rem;
@@ -13,6 +13,15 @@ $size: 1rem;
 $telas: 576, 768, 992, 1200, 1400;
 $logo-ref-size: 100;
 @each $tela in $telas {
+    @media only screen and (min-height: 768px) {
+        #single{
+            margin-bottom: 5vh;
+            margin-top: #{calc($tela * 0.12)}px !important;
+        }
+        .custom-logo-link img{
+            height: 4.2vw !important;
+        }
+    }
     @media only screen and (max-width: 575px) {
         @include parte1(
             $h1-size: #{calc($tela * 0.018)}px
@@ -25,7 +34,7 @@ $logo-ref-size: 100;
 
         );
         @include search-bar(
-            $largura: calc($tela * 0.7)px,
+            $largura: #{calc($tela * 0.7)}px,
             $font-size: $size,
             $larg-label: auto,
         );        
@@ -51,7 +60,7 @@ $logo-ref-size: 100;
 
         );
         @include search-bar(
-            $largura: calc($tela * 0.7)px,
+            $largura: #{calc($tela * 1)},
             $font-size: $size,
             $larg-label: auto,
         );        
@@ -67,5 +76,6 @@ $logo-ref-size: 100;
             $deg: 90
         );
         @include single($altura:calc($tela * 0.15));
+        @include resultadoBusca($alturaInicial:calc($tela * 0.10));
     }
 }

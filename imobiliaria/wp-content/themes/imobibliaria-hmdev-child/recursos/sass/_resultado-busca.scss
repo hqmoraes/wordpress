@@ -1,0 +1,8 @@
+@mixin resultadoBusca($alturaInicial) {
+    #resultadoBusca{
+        margin-top: #{$alturaInicial}px;
+    }
+    .card{
+        margin-bottom: 5vh;
+    }
+}

@@ -26,8 +26,9 @@
             font-size: $font-size - 0.2 !important;
             font-weight: 600;
         }
-        max-width: $largura;
-        min-width: $largura - 20;
+        width: 100%;
+        max-width: #{$largura}px;
+        min-width: calc(#{$largura}px - 10%);
         margin: 0 auto;
         z-index: 5;
         position: relative;

@@ -26,7 +26,8 @@ $argsAfter = array(
 );
 /** --------------------------------------------------------------------------------------------------------------------------- */
 ?>
-<div class="container">
+<div class="container" id="resultadoBusca">
+<?php get_template_part('template-parts/search','bar');?>    
     <div class="row">
         <?php
         $buscar = new wp_query($argsAfter);
@@ -50,7 +51,12 @@ $argsAfter = array(
         <?php
             }
             wp_reset_postdata();
-        } ?>
+        }
+        else{?>
+        <div class="bg-light mt-4 text-center"><h1 class="display-1 p-4">Não houve resultados para a sua pesquisa!</h1></div><?php
+            
+        }
+        ?>
     </div>
 </div>
 <?php get_footer(); ?>
