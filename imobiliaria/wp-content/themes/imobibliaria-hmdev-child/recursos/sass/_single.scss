@@ -1,0 +1,19 @@
+@mixin single($altura) {
+    $alturaMenu: calc($altura * 0.50) + 20;
+    #single{
+        padding: 30px 0 ;
+        background:white;
+        margin-top: #{$alturaMenu}px;
+        .singleImg{
+            width: 50%;
+            margin: 0 auto;
+            button::before{
+                color: black;
+            }
+        }
+        .singleTxt{
+            width: 40%;
+            padding: 20px;
+        }
+    }
+}

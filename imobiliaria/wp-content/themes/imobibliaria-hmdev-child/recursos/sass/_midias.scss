@@ -4,7 +4,7 @@
 @import 'search-bar';
 @import 'banner';
 @import 'destaques';
-
+@import 'single';
 
 
 $tela:575;
@@ -36,6 +36,7 @@ $logo-ref-size: 100;
             $opct2: 0.8,
             $deg: 45
         );
+        @include single ($altura:calc($tela * 0.15));
     }
 
     @media only screen and (min-width: #{$tela}px) {
@@ -65,5 +66,6 @@ $logo-ref-size: 100;
             $opct2: 0,
             $deg: 90
         );
+        @include single($altura:calc($tela * 0.15));
     }
 }

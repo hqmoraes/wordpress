@@ -21,6 +21,11 @@
             height: #{calc($altura * 0.20 )}px !important;
             margin-right: 10px;
         }
+        .col-2 img{
+            border-radius: 50px;
+            box-shadow: 1px 1px 5px black;
+            border: none;
+        }
         #img-whats{
             align-self: flex-start;
         }

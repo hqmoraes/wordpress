@@ -34,10 +34,11 @@ $('.card-imagens').slick({
 
 });
 
-const lancamentos = document.querySelector('#parte1 .wp-block-buttons').cloneNode(true);
-document.getElementById('lancamentos').appendChild(lancamentos);
-document.querySelector('#parte1 .wp-block-buttons').style.display='none';
-
+if(document.querySelector('#parte1 .wp-block-buttons')){
+  const lancamentos = document.querySelector('#parte1 .wp-block-buttons').cloneNode(true);
+  document.getElementById('lancamentos').appendChild(lancamentos);
+  document.querySelector('#parte1 .wp-block-buttons').style.display='none';
+}
 imagesCount = 0;
 
 const bannerImages = document.querySelectorAll('.bannerImagens figure');
@@ -128,5 +129,19 @@ $('.sliderDestaques').slick({
       console.log(t.innerText);
       t.classList.add('textoDestaque');
     }
-    
+
   })
+
+  const singleImg = document.querySelectorAll('#single p');
+  singleImg[0].classList.add('singleTxt');
+  singleImg[1].classList.add('singleImg');
+
+  $('.singleImg').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
+  
