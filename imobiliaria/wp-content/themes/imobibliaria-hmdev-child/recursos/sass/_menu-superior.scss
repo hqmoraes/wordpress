@@ -1,6 +1,6 @@
-@mixin menu-superior($altura){
+@mixin menu-superior($altura, $font-size: 1rem, $margem-y:0 , $margem-x: 0, $size-logo:5vw){
     #menu-superior{
-        height: $altura;
+        height: #{calc($altura * 0.50)}px;
         background-color: rgb(124, 115, 115); 
         position: fixed;
         top:0;
@@ -8,40 +8,40 @@
         z-index: 10;
         color: white;
         font-weight: 100;
-        .col-11 img{
-            height: $altura - 75 !important;
+        font-size: #{$font-size}rem;
+        p{
+            margin:auto !important;
+        }
+        .col-10 img, .col-11 img{
+            height: #{calc($altura * 0.1)}px !important;
+            min-height: 20px;
             margin-right: 5px;
         }
-        .col-1 img, .col-2 img{
-            height: $altura - 60 !important;
+        .col-1 img{
+            height: #{calc($altura * 0.20 )}px !important;
             margin-right: 10px;
         }
+        #img-whats{
+            align-self: flex-start;
+        }
+        #img-whats img{
+            min-height: 15px;
+        }
         .custom-logo-link img{
-            width: auto;
-            height: $altura - 30 !important;
+            max-width: 100%;
+            width: $size-logo;
+            height: $size-logo;
         }
         .custom-logo-link{
             display: flex;
             align-items: center;
             height: $altura;
         }
+        button{
+            font-size: #{$font-size}rem;
+        }
 
     }
-    #contato p{
-        margin: 0 20px;
-        font-size: 1.3rem;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    @include menu-superior(
-        $altura: 100px
-    )
-}
-@media only screen and (max-width: 991px) {
-    @include menu-superior(
-        $altura: 80px
-    )
 }
 
 

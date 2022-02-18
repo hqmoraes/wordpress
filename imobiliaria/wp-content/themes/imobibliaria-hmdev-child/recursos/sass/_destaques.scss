@@ -1,0 +1,70 @@
+@mixin destaques(
+    $alturaDestaque,
+    $larguraDestaque,
+    $opct1, $opct2,
+    $bg1: rgba(255, 236, 0, $opct1) 80%, 
+    $bg2: rgba(255, 255, 255, $opct2),
+    $deg
+) {
+    #destaques{
+        width: $larguraDestaque;
+        height: $alturaDestaque;
+        background-image: linear-gradient(#{$deg}deg, $bg1, $bg2);
+        #intro{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .col-12{
+                text-align: center;
+                background: white;
+                height: fit-content;
+            }
+            h1{
+                height: fit-content;
+            }
+        }
+
+        #lista{
+            min-height: 100vh;
+            background-color: rgb(82, 59, 59)
+        }
+        .texto{
+            display: none;
+        }
+        .imgDestaques{
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            max-height: 60vh;
+        }
+        .cardDestaque{
+
+            position: relative;
+        }
+        .corpoDestaque{
+            position: absolute;
+            bottom:0;
+            background-color: rgba(75, 70, 70, 0.8);
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0 20px;
+            div{
+                text-transform: capitalize;
+            }
+            .textoDestaque{
+                display:none;
+            }
+            .col-6:nth-child(3), .col-6:nth-child(5){
+                text-align: end;
+            }
+        }
+        .sliderDestaques{
+            padding: 0 20px;
+        }
+    }
+}

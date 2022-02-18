@@ -3,9 +3,41 @@
   height: 200px !important;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 575px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 10.368px !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 10.368px;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
   #menu-superior {
-    height: 100px;
+    height: 25.92px;
     background-color: #7c7373;
     position: fixed;
     top: 0;
@@ -13,62 +45,135 @@
     z-index: 10;
     color: white;
     font-weight: 100;
+    font-size: 0.2304rem;
   }
-  #menu-superior .col-11 img {
-    height: 25px !important;
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 5.184px !important;
+    min-height: 20px;
     margin-right: 5px;
   }
-  #menu-superior .col-1 img, #menu-superior .col-2 img {
-    height: 40px !important;
+  #menu-superior .col-1 img {
+    height: 10.368px !important;
     margin-right: 10px;
   }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
   #menu-superior .custom-logo-link img {
-    width: auto;
-    height: 70px !important;
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
   }
   #menu-superior .custom-logo-link {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 51.84;
+  }
+  #menu-superior button {
+    font-size: 0.2304rem;
   }
 
-  #contato p {
-    margin: 0 20px;
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 991px) {
-  #menu-superior {
-    height: 80px;
-    background-color: #7c7373;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  #busca {
     color: white;
-    font-weight: 100;
+    max-width: 403.2 px;
+    min-width: 403.2 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
   }
-  #menu-superior .col-11 img {
-    height: 5px !important;
-    margin-right: 5px;
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
   }
-  #menu-superior .col-1 img, #menu-superior .col-2 img {
-    height: 20px !important;
-    margin-right: 10px;
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
   }
-  #menu-superior .custom-logo-link img {
-    width: auto;
-    height: 50px !important;
+  #busca select:focus {
+    box-shadow: none;
   }
-  #menu-superior .custom-logo-link {
-    display: flex;
-    align-items: center;
-    height: 80px;
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
   }
 
-  #contato p {
-    margin: 0 20px;
-    font-size: 1.3rem;
+  #faixa label {
+    width: auto;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ffec00 80%, rgba(255, 255, 255, 0.8));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -82,7 +187,7 @@
   }
   #parte1 h2 {
     color: white;
-    font-size: 1.1912rem;
+    font-size: 1.6912rem;
     margin-bottom: 50px;
   }
   #parte1 .wp-block-button {
@@ -100,8 +205,352 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+  }
+
+  #menu-superior {
+    height: 43.2px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.4608rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 8.64px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 17.28px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 86.4;
+  }
+  #menu-superior button {
+    font-size: 0.4608rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 403.2 px;
+    min-width: 403.2 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #cntBanner {
+    background-color: white;
+    height: 100vh;
+  }
+
+  .banner .bannerImages {
+    min-height: 576;
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 489.6px;
+    height: 172.8px;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 236, 0, 0.8) 80%, rgba(255, 255, 255, 0));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 13.824px !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 13.824px;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #menu-superior {
+    height: 34.56px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.3072rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 6.912px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 13.824px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 69.12;
+  }
+  #menu-superior button {
+    font-size: 0.3072rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 537.6 px;
+    min-width: 537.6 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ffec00 80%, rgba(255, 255, 255, 0.8));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -115,7 +564,7 @@
   }
   #parte1 h2 {
     color: white;
-    font-size: 1.4216rem;
+    font-size: 1.9216rem;
     margin-bottom: 50px;
   }
   #parte1 .wp-block-button {
@@ -133,8 +582,352 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+  }
+
+  #menu-superior {
+    height: 57.6px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.6144rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 11.52px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 23.04px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 115.2;
+  }
+  #menu-superior button {
+    font-size: 0.6144rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 537.6 px;
+    min-width: 537.6 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #cntBanner {
+    background-color: white;
+    height: 100vh;
+  }
+
+  .banner .bannerImages {
+    min-height: 768;
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 652.8px;
+    height: 230.4px;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 236, 0, 0.8) 80%, rgba(255, 255, 255, 0));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 17.856px !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 17.856px;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #menu-superior {
+    height: 44.64px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.3968rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 8.928px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 17.856px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 89.28;
+  }
+  #menu-superior button {
+    font-size: 0.3968rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 694.4 px;
+    min-width: 694.4 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ffec00 80%, rgba(255, 255, 255, 0.8));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -148,7 +941,7 @@
   }
   #parte1 h2 {
     color: white;
-    font-size: 1.6904rem;
+    font-size: 2.1904rem;
     margin-bottom: 50px;
   }
   #parte1 .wp-block-button {
@@ -166,8 +959,352 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+  }
+
+  #menu-superior {
+    height: 74.4px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.7936rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 14.88px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 29.76px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 148.8;
+  }
+  #menu-superior button {
+    font-size: 0.7936rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 694.4 px;
+    min-width: 694.4 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #cntBanner {
+    background-color: white;
+    height: 100vh;
+  }
+
+  .banner .bannerImages {
+    min-height: 992;
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 843.2px;
+    height: 297.6px;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 236, 0, 0.8) 80%, rgba(255, 255, 255, 0));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 21.6px !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 21.6px;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #menu-superior {
+    height: 54px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.48rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 10.8px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 21.6px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 108;
+  }
+  #menu-superior button {
+    font-size: 0.48rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 840 px;
+    min-width: 840 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ffec00 80%, rgba(255, 255, 255, 0.8));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -181,7 +1318,7 @@
   }
   #parte1 h2 {
     color: white;
-    font-size: 1.94rem;
+    font-size: 2.44rem;
     margin-bottom: 50px;
   }
   #parte1 .wp-block-button {
@@ -199,8 +1336,352 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+  }
+
+  #menu-superior {
+    height: 90px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.96rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 18px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 36px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 180;
+  }
+  #menu-superior button {
+    font-size: 0.96rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 840 px;
+    min-width: 840 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #cntBanner {
+    background-color: white;
+    height: 100vh;
+  }
+
+  .banner .bannerImages {
+    min-height: 1200;
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 1020px;
+    height: 360px;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 236, 0, 0.8) 80%, rgba(255, 255, 255, 0));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #parte1 h1, #parte1 h2 {
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+  }
+  #parte1 h1 {
+    color: white;
+    font-size: 25.2px !important;
+  }
+  #parte1 h2 {
+    color: white;
+    font-size: 25.2px;
+    margin-bottom: 50px;
+  }
+  #parte1 .wp-block-button {
+    margin: 50px auto 0;
+  }
+  #parte1 .wp-block-button__link {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px 20px;
+  }
+
+  #opacidade-parte1 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(131, 10, 245, 0.3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #menu-superior {
+    height: 63px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 0.56rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 12.6px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 25.2px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 126;
+  }
+  #menu-superior button {
+    font-size: 0.56rem;
+  }
+
+  #busca {
+    color: white;
+    max-width: 980 px;
+    min-width: 980 px-20;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+  }
+  #busca #ctn-busca {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #busca select {
+    font-weight: bold;
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+  }
+  #busca select:focus {
+    box-shadow: none;
+  }
+  #busca option {
+    font-size: 0.8rem !important;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #busca h5 {
+    font-size: 1.5rem !important;
+  }
+  #busca input, #busca label, #busca span {
+    font-size: 0.8rem !important;
+    font-weight: 600;
+  }
+
+  #faixa label {
+    width: auto;
+  }
+
+  #destaques {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ffec00 80%, rgba(255, 255, 255, 0.8));
+  }
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
+    position: relative;
+  }
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
+  }
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
+  }
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
+  }
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -214,7 +1695,7 @@
   }
   #parte1 h2 {
     color: white;
-    font-size: 2.18rem;
+    font-size: 2.68rem;
     margin-bottom: 50px;
   }
   #parte1 .wp-block-button {
@@ -232,16 +1713,57 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
-}
-/* <= 575 */
-@media only screen and (max-width: 575px) {
+
+  #menu-superior {
+    height: 105px;
+    background-color: #7c7373;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    font-weight: 100;
+    font-size: 1.12rem;
+  }
+  #menu-superior p {
+    margin: auto !important;
+  }
+  #menu-superior .col-10 img, #menu-superior .col-11 img {
+    height: 21px !important;
+    min-height: 20px;
+    margin-right: 5px;
+  }
+  #menu-superior .col-1 img {
+    height: 42px !important;
+    margin-right: 10px;
+  }
+  #menu-superior #img-whats {
+    align-self: flex-start;
+  }
+  #menu-superior #img-whats img {
+    min-height: 15px;
+  }
+  #menu-superior .custom-logo-link img {
+    max-width: 100%;
+    width: 5vw;
+    height: 5vw;
+  }
+  #menu-superior .custom-logo-link {
+    display: flex;
+    align-items: center;
+    height: 210;
+  }
+  #menu-superior button {
+    font-size: 1.12rem;
+  }
+
   #busca {
     color: white;
-    max-width: 300px;
-    min-width: 280px;
+    max-width: 980 px;
+    min-width: 980 px-20;
     margin: 0 auto;
     z-index: 5;
     position: relative;
@@ -274,122 +1796,96 @@
   #faixa label {
     width: auto;
   }
-}
-/* >= 576 - sm */
-@media only screen and (min-width: 576px) {
-  #busca {
-    color: white;
-    max-width: 400px;
-    min-width: 380px;
-    margin: 0 auto;
-    z-index: 5;
-    position: relative;
-  }
-  #busca #ctn-busca {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  #busca select {
-    font-weight: bold;
-    font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: none;
-  }
-  #busca select:focus {
-    box-shadow: none;
-  }
-  #busca option {
-    font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.7);
-  }
-  #busca h5 {
-    font-size: 1.5rem !important;
-  }
-  #busca input, #busca label, #busca span {
-    font-size: 0.8rem !important;
-    font-weight: 600;
+
+  #cntBanner {
+    background-color: white;
+    height: 100vh;
   }
 
-  #faixa label {
-    width: auto;
+  .banner .bannerImages {
+    min-height: 1400;
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
   }
-}
-/* >=768 - md */
-@media only screen and (min-width: 768px) {
-  #busca {
-    color: white;
-    max-width: 750px;
-    min-width: 730px;
-    margin: 0 auto;
-    z-index: 5;
-    position: relative;
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
   }
-  #busca #ctn-busca {
-    background-color: rgba(0, 0, 0, 0.7);
+  .banner .bgBanner {
+    width: 1190px;
+    height: 420px;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    margin: 20px auto;
   }
-  #busca select {
-    font-weight: bold;
-    font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: none;
+  .banner .conteudoBanner {
+    padding: 30px;
   }
-  #busca select:focus {
-    box-shadow: none;
-  }
-  #busca option {
-    font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.7);
-  }
-  #busca h5 {
-    font-size: 1.5rem !important;
-  }
-  #busca input, #busca label, #busca span {
-    font-size: 0.8rem !important;
-    font-weight: 600;
+  .banner .slick-arrow::before {
+    color: black;
   }
 
-  #faixa label {
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
+  #destaques {
     width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255, 236, 0, 0.8) 80%, rgba(255, 255, 255, 0));
   }
-}
-/* >= 992 - lg */
-@media only screen and (min-width: 992px) {
-  #busca {
-    color: white;
-    max-width: 1200px;
-    min-width: 1180px;
+  #destaques #intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #destaques #intro .col-12 {
+    text-align: center;
+    background: white;
+    height: fit-content;
+  }
+  #destaques #intro h1 {
+    height: fit-content;
+  }
+  #destaques #lista {
+    min-height: 100vh;
+    background-color: #523b3b;
+  }
+  #destaques .texto {
+    display: none;
+  }
+  #destaques .imgDestaques {
     margin: 0 auto;
-    z-index: 5;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  #destaques .cardDestaque {
     position: relative;
   }
-  #busca #ctn-busca {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  #busca select {
-    font-weight: bold;
-    font-size: 1rem !important;
-    background: rgba(0, 0, 0, 0.4);
+  #destaques .corpoDestaque {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(75, 70, 70, 0.8);
+    width: 100%;
+    height: 100px;
     color: white;
-    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
   }
-  #busca select:focus {
-    box-shadow: none;
+  #destaques .corpoDestaque div {
+    text-transform: capitalize;
   }
-  #busca option {
-    font-size: 1rem !important;
-    background: rgba(0, 0, 0, 0.7);
+  #destaques .corpoDestaque .textoDestaque {
+    display: none;
   }
-  #busca h5 {
-    font-size: 1.7rem !important;
+  #destaques .corpoDestaque .col-6:nth-child(3), #destaques .corpoDestaque .col-6:nth-child(5) {
+    text-align: end;
   }
-  #busca input, #busca label, #busca span {
-    font-size: 1rem !important;
-    font-weight: 600;
-  }
-
-  #faixa label {
-    width: auto;
+  #destaques .sliderDestaques {
+    padding: 0 20px;
   }
 }
 

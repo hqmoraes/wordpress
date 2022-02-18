@@ -1,0 +1,35 @@
+@mixin bannerImages($alturaBanner, $larguraBanner){
+    #cntBanner{
+        background-color:white;
+        height: 100vh;
+    }
+    .banner {
+        .bannerImages{
+            min-height: $alturaBanner;
+            background-size: 150px;
+            h2{
+                text-align: center;
+                font-weight: bolder;
+            }
+            text-shadow: 1px 1px 5px white;
+        }
+        .bgBanner{
+            $opc: 0.80;
+            width: #{calc($larguraBanner * 0.85)}px;
+            height: #{$alturaBanner * 0.30}px;
+            background-image: linear-gradient(90deg, rgba(142, 143, 165, $opc),rgba(255, 255, 165, $opc));
+            margin: 20px auto;
+        }
+        .conteudoBanner{
+            padding: 30px;
+        }
+        .slick-arrow::before{
+            color: black;
+        }
+    }
+    .bannerImagens{
+        .wp-block-columns{
+            display: none;
+        }
+    }
+}
