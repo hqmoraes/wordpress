@@ -16,7 +16,7 @@ $logo-ref-size: 100;
     @media only screen and (min-height: 768px) {
         #single{
             margin-bottom: 5vh;
-            margin-top: #{calc($tela * 0.12)}px !important;
+            margin-top: #{calc($tela * 0.20)}px !important;
         }
         .custom-logo-link img{
             height: 4.2vw !important;
