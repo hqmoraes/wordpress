@@ -3,7 +3,7 @@
     #single{
         height: auto;
         max-height: 65vh;
-        padding: 30px 0 ;
+        padding: 30px 20px ;
         background:white;
         margin-top: #{$alturaMenu}px;
         .singleImg{
@@ -11,9 +11,6 @@
             button::before{
                 color: black;
             }
-        }
-        .singleTxt{
-            padding-left: 2vw;
         }
         .col-12{
             display: flex;

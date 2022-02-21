@@ -14,7 +14,7 @@
             text-shadow: 1px 1px 5px white;
         }
         .bgBanner{
-            $opc: 0.80;
+            $opc: 0.90;
             width: #{calc($larguraBanner * 0.85)}px;
             height: #{$alturaBanner * 0.30}px;
             background-image: linear-gradient(90deg, rgba(142, 143, 165, $opc),rgba(255, 255, 165, $opc));

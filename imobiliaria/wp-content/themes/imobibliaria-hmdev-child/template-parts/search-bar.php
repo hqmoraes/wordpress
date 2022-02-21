@@ -32,7 +32,7 @@ $opera = get_term_children($opera_id, $opera_tax );
                         <div class="col-12 col-md-3">
                             <div class="row">
                                 <div class="col-12">
-                                    <select class="form-select" aria-label="Selecionar operação" name="opera">
+                                    <select id="operacao" class="form-select" aria-label="Selecionar operação" name="opera" onchange="enablePesquisa()">
                                         <Option>Operação</Option>
                                         <?php
                                         foreach($opera as $op){?>
@@ -40,7 +40,7 @@ $opera = get_term_children($opera_id, $opera_tax );
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select" aria-label="Selecionar Tipo de Imóvel" name="tipo">
+                                    <select id="tipo" class="form-select" aria-label="Selecionar Tipo de Imóvel" name="tipo" onchange="enablePesquisa()">
                                         <Option>Tipo de imóvel</Option>
                                         <?php 
                                             foreach($tipos as $tipo){ ?>
@@ -49,7 +49,7 @@ $opera = get_term_children($opera_id, $opera_tax );
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select" aria-label="Selecionar cidade" name="cidade">
+                                    <select id="cidade" class="form-select" aria-label="Selecionar cidade" name="cidade" onchange="enablePesquisa()">
                                         <Option>Cidade</Option>
                                             <?php
                                             foreach($cidades as $cidade){?>

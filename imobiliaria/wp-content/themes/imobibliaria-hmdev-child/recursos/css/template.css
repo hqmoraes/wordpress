@@ -109,8 +109,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -195,7 +194,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 63.2px;
   }
@@ -204,9 +203,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -310,8 +306,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -350,7 +345,7 @@
   .banner .bgBanner {
     width: 489.6px;
     height: 172.8px;
-    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
@@ -427,7 +422,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 63.2px;
   }
@@ -436,9 +431,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -560,8 +552,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -646,7 +637,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 77.6px;
   }
@@ -655,9 +646,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -761,8 +749,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -801,7 +788,7 @@
   .banner .bgBanner {
     width: 652.8px;
     height: 230.4px;
-    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
@@ -878,7 +865,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 77.6px;
   }
@@ -887,9 +874,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -1011,8 +995,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -1097,7 +1080,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 94.4px;
   }
@@ -1106,9 +1089,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -1212,8 +1192,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -1252,7 +1231,7 @@
   .banner .bgBanner {
     width: 843.2px;
     height: 297.6px;
-    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
@@ -1329,7 +1308,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 94.4px;
   }
@@ -1338,9 +1317,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -1462,8 +1438,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -1548,7 +1523,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 110px;
   }
@@ -1557,9 +1532,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -1663,8 +1635,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -1703,7 +1674,7 @@
   .banner .bgBanner {
     width: 1020px;
     height: 360px;
-    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
@@ -1780,7 +1751,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 110px;
   }
@@ -1789,9 +1760,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -1913,8 +1881,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -1999,7 +1966,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 125px;
   }
@@ -2008,9 +1975,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
@@ -2114,8 +2078,7 @@
   #busca select {
     font-weight: bold;
     font-size: 0.8rem !important;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    color: black;
     border: none;
   }
   #busca select:focus {
@@ -2154,7 +2117,7 @@
   .banner .bgBanner {
     width: 1190px;
     height: 420px;
-    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.8), rgba(255, 255, 165, 0.8));
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
@@ -2231,7 +2194,7 @@
   #single {
     height: auto;
     max-height: 65vh;
-    padding: 30px 0;
+    padding: 30px 20px;
     background: white;
     margin-top: 125px;
   }
@@ -2240,9 +2203,6 @@
   }
   #single .singleImg button::before {
     color: black;
-  }
-  #single .singleTxt {
-    padding-left: 2vw;
   }
   #single .col-12 {
     display: flex;
