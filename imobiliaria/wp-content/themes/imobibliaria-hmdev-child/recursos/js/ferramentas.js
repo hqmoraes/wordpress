@@ -126,7 +126,6 @@ $('.sliderDestaques').slick({
   var textoDestaque = document.querySelectorAll('.corpoDestaque div');
   textoDestaque.forEach(t =>{
     if(t.innerText === 'Destaques'){
-      console.log(t.innerText);
       t.classList.add('textoDestaque');
     }
 
