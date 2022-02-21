@@ -49,7 +49,7 @@ $logo-ref-size: 100;
         );
         @include bannerImages(
             $alturaBanner: 100vh,
-            $larguraBanner: calc($tela)
+            $larguraBanner: calc($tela *0.5)
         );
         @include single ($altura:calc($tela * 0.15));
     }
