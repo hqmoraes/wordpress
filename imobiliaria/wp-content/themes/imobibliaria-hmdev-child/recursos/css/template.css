@@ -206,14 +206,14 @@
     font-weight: bolder;
   }
   .banner .bgBanner {
-    width: 244.8px;
+    width: 195.84px;
     min-height: 30vhpx;
     background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
     padding: 30px;
-    width: 288;
+    width: 230.4;
     margin: 0 auto;
   }
   .banner .slick-arrow::before {
@@ -684,14 +684,14 @@
     font-weight: bolder;
   }
   .banner .bgBanner {
-    width: 326.4px;
+    width: 261.12px;
     min-height: 30vhpx;
     background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
     padding: 30px;
-    width: 384;
+    width: 307.2;
     margin: 0 auto;
   }
   .banner .slick-arrow::before {
@@ -1162,14 +1162,14 @@
     font-weight: bolder;
   }
   .banner .bgBanner {
-    width: 421.6px;
+    width: 337.28px;
     min-height: 30vhpx;
     background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
     padding: 30px;
-    width: 496;
+    width: 396.8;
     margin: 0 auto;
   }
   .banner .slick-arrow::before {
@@ -1640,14 +1640,14 @@
     font-weight: bolder;
   }
   .banner .bgBanner {
-    width: 510px;
+    width: 408px;
     min-height: 30vhpx;
     background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
     padding: 30px;
-    width: 600;
+    width: 480;
     margin: 0 auto;
   }
   .banner .slick-arrow::before {
@@ -2118,14 +2118,14 @@
     font-weight: bolder;
   }
   .banner .bgBanner {
-    width: 595px;
+    width: 476px;
     min-height: 30vhpx;
     background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
     margin: 20px auto;
   }
   .banner .conteudoBanner {
     padding: 30px;
-    width: 700;
+    width: 560;
     margin: 0 auto;
   }
   .banner .slick-arrow::before {
