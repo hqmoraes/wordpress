@@ -16,7 +16,7 @@ $logo-ref-size: 100;
     @media only screen and (min-height: 768px) {
         #single{
             margin-bottom: 5vh;
-            margin-top: #{calc($tela * 0.20)}px !important;
+            margin-top: #{calc($tela * 0.12)}px !important;
         }
         .custom-logo-link img{
             height: 4.2vw !important;
@@ -24,7 +24,7 @@ $logo-ref-size: 100;
     }
     @media only screen and (max-width: 575px) {
         @include parte1(
-            $h1-size: #{calc($tela * 0.018)}px
+            $h1-size: #{calc($tela * 0.25)}px
         );
         @include menu-superior(
             $altura: calc($tela * 0.09),
