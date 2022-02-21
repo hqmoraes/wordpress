@@ -44,7 +44,8 @@ $logo-ref-size: 100;
             $opct1: 1,
             $opct2: 0.8,
             $deg: 45,
-            $fsizeDestaque: 0.5rem
+            $fsizeDestaque: 0.6rem,
+            $alturaRodape: 50px
         );
         @include bannerImages(
             $alturaBanner: 100vh,
@@ -78,7 +79,8 @@ $logo-ref-size: 100;
             $larguraDestaque: 100%,
             $opct1: .8,
             $opct2: 0,
-            $deg: 90
+            $deg: 90,
+            $alturaRodape: 100px;
         );
         @include single($altura:calc($tela * 0.15));
         @include resultadoBusca($alturaInicial:calc($tela * 0.10));
