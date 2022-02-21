@@ -80,7 +80,7 @@ $logo-ref-size: 100;
             $opct1: .8,
             $opct2: 0,
             $deg: 90,
-            $alturaRodape: 100px;
+            $alturaRodape: 100px
         );
         @include single($altura:calc($tela * 0.15));
         @include resultadoBusca($alturaInicial:calc($tela * 0.10));

@@ -5,7 +5,8 @@
     $bg1: rgba(255, 236, 0, $opct1) 80%, 
     $bg2: rgba(255, 255, 255, $opct2),
     $deg,
-    $fsizeDestaque: 1rem
+    $fsizeDestaque: 1rem,
+    $alturaRodape
 ) {
     #destaques{
         font-size: $fsizeDestaque;
