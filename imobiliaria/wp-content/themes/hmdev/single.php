@@ -10,7 +10,7 @@
             }?>
         </div>
     </div>
-    <script>imgsSingle();</script>
 </div>
 <?php get_template_part('template-parts/search','bar');
 get_footer();?>
+<script>imgsSingle();</script>
