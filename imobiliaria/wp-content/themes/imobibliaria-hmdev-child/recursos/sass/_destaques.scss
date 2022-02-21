@@ -4,9 +4,11 @@
     $opct1, $opct2,
     $bg1: rgba(255, 236, 0, $opct1) 80%, 
     $bg2: rgba(255, 255, 255, $opct2),
-    $deg
+    $deg,
+    $fsizeDestaque: 1rem
 ) {
     #destaques{
+        font-size: $fsizeDestaque;
         width: $larguraDestaque;
         height: $alturaDestaque;
         background-image: linear-gradient(#{$deg}deg, $bg1, $bg2);

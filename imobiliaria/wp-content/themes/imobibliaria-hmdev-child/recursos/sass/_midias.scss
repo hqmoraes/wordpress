@@ -43,7 +43,8 @@ $logo-ref-size: 100;
             $larguraDestaque: 100%,
             $opct1: 1,
             $opct2: 0.8,
-            $deg: 45
+            $deg: 45,
+            $fsizeDestaque: 0.5rem
         );
         @include bannerImages(
             $alturaBanner: 100vh,
