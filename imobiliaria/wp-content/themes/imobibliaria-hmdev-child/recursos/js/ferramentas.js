@@ -139,7 +139,6 @@ $('.sliderDestaques').slick({
   singleImg[1].classList.add('singleImg');
   singleImg[1].classList.add('col-12');
   singleImg[1].classList.add('col-lg-5');
-  }
 
   $('.singleImg').slick({
     dots: true,
@@ -148,4 +147,7 @@ $('.sliderDestaques').slick({
     fade: true,
     cssEase: 'linear'
   });
+  }
+
+
   
