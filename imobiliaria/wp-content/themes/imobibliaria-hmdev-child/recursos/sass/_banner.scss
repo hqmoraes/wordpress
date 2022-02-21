@@ -1,11 +1,10 @@
 @mixin bannerImages($alturaBanner, $larguraBanner){
     #cntBanner{
         background-color:white;
-        height: 100vh;
+        min-height: $alturaBanner;
     }
     .banner {
         .bannerImages{
-            min-height: $alturaBanner;
             background-size: 150px;
             h2{
                 text-align: center;

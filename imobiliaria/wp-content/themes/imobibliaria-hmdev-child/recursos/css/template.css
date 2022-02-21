@@ -192,6 +192,36 @@
     padding: 0 20px;
   }
 
+  #cntBanner {
+    background-color: white;
+    min-height: 100vh;
+  }
+
+  .banner .bannerImages {
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 489.6px;
+    height: 30vhpx;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
   #single {
     height: auto;
     max-height: 65vh;
@@ -332,11 +362,10 @@
 
   #cntBanner {
     background-color: white;
-    height: 100vh;
+    min-height: 576;
   }
 
   .banner .bannerImages {
-    min-height: 576;
     background-size: 150px;
     text-shadow: 1px 1px 5px white;
   }
@@ -637,6 +666,36 @@
     padding: 0 20px;
   }
 
+  #cntBanner {
+    background-color: white;
+    min-height: 100vh;
+  }
+
+  .banner .bannerImages {
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 652.8px;
+    height: 30vhpx;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
   #single {
     height: auto;
     max-height: 65vh;
@@ -777,11 +836,10 @@
 
   #cntBanner {
     background-color: white;
-    height: 100vh;
+    min-height: 768;
   }
 
   .banner .bannerImages {
-    min-height: 768;
     background-size: 150px;
     text-shadow: 1px 1px 5px white;
   }
@@ -1082,6 +1140,36 @@
     padding: 0 20px;
   }
 
+  #cntBanner {
+    background-color: white;
+    min-height: 100vh;
+  }
+
+  .banner .bannerImages {
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 843.2px;
+    height: 30vhpx;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
   #single {
     height: auto;
     max-height: 65vh;
@@ -1222,11 +1310,10 @@
 
   #cntBanner {
     background-color: white;
-    height: 100vh;
+    min-height: 992;
   }
 
   .banner .bannerImages {
-    min-height: 992;
     background-size: 150px;
     text-shadow: 1px 1px 5px white;
   }
@@ -1527,6 +1614,36 @@
     padding: 0 20px;
   }
 
+  #cntBanner {
+    background-color: white;
+    min-height: 100vh;
+  }
+
+  .banner .bannerImages {
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 1020px;
+    height: 30vhpx;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
   #single {
     height: auto;
     max-height: 65vh;
@@ -1667,11 +1784,10 @@
 
   #cntBanner {
     background-color: white;
-    height: 100vh;
+    min-height: 1200;
   }
 
   .banner .bannerImages {
-    min-height: 1200;
     background-size: 150px;
     text-shadow: 1px 1px 5px white;
   }
@@ -1972,6 +2088,36 @@
     padding: 0 20px;
   }
 
+  #cntBanner {
+    background-color: white;
+    min-height: 100vh;
+  }
+
+  .banner .bannerImages {
+    background-size: 150px;
+    text-shadow: 1px 1px 5px white;
+  }
+  .banner .bannerImages h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  .banner .bgBanner {
+    width: 1190px;
+    height: 30vhpx;
+    background-image: linear-gradient(90deg, rgba(142, 143, 165, 0.9), rgba(255, 255, 165, 0.9));
+    margin: 20px auto;
+  }
+  .banner .conteudoBanner {
+    padding: 30px;
+  }
+  .banner .slick-arrow::before {
+    color: black;
+  }
+
+  .bannerImagens .wp-block-columns {
+    display: none;
+  }
+
   #single {
     height: auto;
     max-height: 65vh;
@@ -2112,11 +2258,10 @@
 
   #cntBanner {
     background-color: white;
-    height: 100vh;
+    min-height: 1400;
   }
 
   .banner .bannerImages {
-    min-height: 1400;
     background-size: 150px;
     text-shadow: 1px 1px 5px white;
   }

@@ -45,6 +45,10 @@ $logo-ref-size: 100;
             $opct2: 0.8,
             $deg: 45
         );
+        @include bannerImages(
+            $alturaBanner: 100vh,
+            $larguraBanner: calc($tela)
+        );
         @include single ($altura:calc($tela * 0.15));
     }
 

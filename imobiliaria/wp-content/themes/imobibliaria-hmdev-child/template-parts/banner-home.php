@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12" id="cntBanner">
             <div class="container">
-                <div class="row vh-100">
+                <div class="row teste">
                     <div class="bannerImagens p-4">
                     <?php
                         $argsBanner = array('category_name'=>'banner');
@@ -15,7 +15,7 @@
                         }
                     ?>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12">
                         <div class="banner"></div>
                     </div>
                 </div>
