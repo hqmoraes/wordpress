@@ -1,7 +1,6 @@
 @mixin bannerImages($alturaBanner, $larguraBanner){
     #cntBanner{
         background-color:white;
-        min-height: $alturaBanner;
     }
     .banner {
         .bannerImages{
